@@ -40,6 +40,29 @@ Algunas [ventajas que nos da el modelo MCV](https://marketiweb.com/empresa/blog/
 
 ##### ¿Que otros modelos/frameworks existen de patrones de diseño?
 
+Primero que [son los patrones de diseño:](https://profile.es/blog/patrones-de-diseno-de-software/) Se trata de plantillas que identifican problemas en el sistema y proporciona soluciones apropiadas a problemas generales a los que se han enfrentado los desarrolladores durante un largo periodo de tiempo, a través de prueba y error.
+
+Existen muchos patrones de diseño ya que estos hacen que ahorre tiempo en la parte de la codificacion, por ejemplo al trabajar anteriormente con PHP, este tiene ya varias plantillas elaboradas, podemos encontrar desde cosas basicas hasta complejas
+Pero esto no quiere decir que el trabajo este hecho, solo es una idea de algo que queremos pero esta en el programador adecuarlo en nuestro trabajo final
+
+# Resultados
+
+### Ejemplos de algunos modelos MVC
+
+### [En PHP]()
+    Controllers
+      *controlador.php
+    Models
+      *modelo.php
+    Views
+      *vista.php
+    index.php
+
+### [En java]()
+
+### [En Django]()
+
+
 
 
 
