@@ -50,13 +50,13 @@ Pero esto no quiere decir que el trabajo este hecho, solo es una idea de algo qu
 ### Ejemplos de algunos modelos MVC
 
 ### [En PHP](https://github.com/290119ali/TECNM/tree/master/MVC-1/PHP%20MVC)
-    Controllers
-      *controlador.php
-    Models
-      *modelo.php
-    Views
-      *vista.php
-    index.php
+    - Controllers
+      - controlador.php
+    - Models
+      - modelo.php
+    - Views
+      - vista.php
+    - index.php
 
 ### [En java]()
 
