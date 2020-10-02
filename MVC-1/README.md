@@ -60,7 +60,7 @@ Pero esto no quiere decir que el trabajo este hecho, solo es una idea de algo qu
     - index.php
 [Referencias](https://www.adaweb.es/modelo-vista-controlador-mvc-php/)
 
-### [En JavaScript]()
+### [En JavaScript](https://github.com/290119ali/TECNM/tree/master/MVC-1/JAVASCRIPT%20MVC)
 
     MVC
     - mvc.js
@@ -70,7 +70,7 @@ Pero esto no quiere decir que el trabajo este hecho, solo es una idea de algo qu
 
 
 
-### [En Python]()
+### [En Python](https://github.com/290119ali/TECNM/tree/master/MVC-1/PYTHON%20MVC)
 
     MVC
     - program
