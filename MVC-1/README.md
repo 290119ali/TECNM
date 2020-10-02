@@ -50,6 +50,7 @@ Pero esto no quiere decir que el trabajo este hecho, solo es una idea de algo qu
 ### Ejemplos de algunos modelos MVC
 
 ### [En PHP](https://github.com/290119ali/TECNM/tree/master/MVC-1/PHP%20MVC)
+    MVC
     - Controllers
       - controlador.php
     - Models
@@ -57,11 +58,28 @@ Pero esto no quiere decir que el trabajo este hecho, solo es una idea de algo qu
     - Views
       - vista.php
     - index.php
+[Referencias](https://www.adaweb.es/modelo-vista-controlador-mvc-php/)
 
-### [En java]()
+### [En JavaScript]()
+
+    MVC
+    - mvc.js
+    - index.html
+
+[Referencias](https://www.natapuntes.es/patron-mvc-en-vanilla-javascript/)
 
 
-### [En Django]()
+
+### [En Python]()
+
+    MVC
+    - program
+      -- controller.py 
+      -- model.py 
+      -- view.py 
+      -- db.txt #simulates database 
+  
+[Referencias](https://stackoverrun.com/es/q/10485735)
 
 
 
