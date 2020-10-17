@@ -12,43 +12,45 @@ El método [HTTP GET](https://developer.mozilla.org/es/docs/Web/HTTP/Methods/GET
 
     Ejemplo
 
-    1 GET /index.html HTTP/1.1  
-    2 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
-    3 Host: www.yosoy.dev
-    4 Accept-Language: es-mx
-    5 Accept-Encoding: gzip, deflate
-    6 Connection: Keep-Alive
+    GET /index.html HTTP/1.1  
+    User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+    Host: www.yosoy.dev
+    Accept-Language: es-mx
+    Accept-Encoding: gzip, deflate
+    Connection: Keep-Alive
   
 El servidor constara algo similar
 
-    1 Ejemplo respuesta del servidor:
-    2 HTTP/1.1 200 OK
-    3 Date: Wed, 08 Nov 2017 12:28:53 GMT
-    4 Server: Apache/2.2.14 (Win32)
-    5 Last-Modified: Mon, 22 Jul 2014 19:15:56 GMT
-    6 ETag: "34aa387-d-1568eb00"
-    7 Vary: Authorization,Accept
-    8 Accept-Ranges: bytes
-    9 Content-Length: 88
-    10 Content-Type: text/html
-    11 Connection: Closed
+    Ejemplo respuesta del servidor:
+    HTTP/1.1 200 OK
+    Date: Wed, 08 Nov 2017 12:28:53 GMT
+    Server: Apache/2.2.14 (Win32)
+    Last-Modified: Mon, 22 Jul 2014 19:15:56 GMT
+    ETag: "34aa387-d-1568eb00"
+    Vary: Authorization,Accept
+    Accept-Ranges: bytes
+    Content-Length: 88
+    Content-Type: text/html
+    Connection: Closed
     
 
 ### Metodo HEAD
 
-El método [HTTP HEAD](https://developer.mozilla.org/es/docs/Web/HTTP/Methods/HEAD) solicita los encabezados que se devolverían si la HEADURL de la solicitud se solicitara con el GETmétodo HTTP . Por ejemplo, si una URL puede producir una descarga grande, una HEADsolicitud podría leer su Content-Lengthencabezado para verificar el archivo sin descargar el archivo.
+El método [HTTP HEAD](https://developer.mozilla.org/es/docs/Web/HTTP/Methods/HEAD) solicita los encabezados que se devolverían si la HEAD URL de la solicitud se solicitara con el GET método HTTP . Por ejemplo, si una URL puede producir una descarga grande, una HEAD solicitud podría leer su Content-Lengthencabezado para verificar el archivo sin descargar el archivo.
 
-Si la respuesta a una HEADsolicitud muestra que una respuesta de URL almacenada en caché ahora está desactualizada, la copia almacenada en caché se invalida incluso si no GETse realizó ninguna solicitud.
+Si la respuesta a una HEAD solicitud muestra que una respuesta de URL almacenada en caché ahora está desactualizada, la copia almacenada en caché se invalida incluso si no GET se realizó ninguna solicitud.
 
     Ejemplo 
-    El método HEAD es muy similar al GET (funcionalmente hablando), a excepción de que el servidor responde con líneas y headers, pero no con el body de la respuesta.
+    El método HEAD es muy similar al GET (funcionalmente hablando) 
+    A excepción de que el servidor responde con líneas y headers, pero no con el body de la respuesta.
 
-    1 GET /index.html HTTP/1.1  
-    2 User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
-    3 Host: www.yosoy.dev
-    4 Accept-Language: es-mx
-    5 Accept-Encoding: gzip, deflate
-    6 Connection: Keep-Alive
+    GET /index.html HTTP/1.1  
+    User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+    Host: www.yosoy.dev
+    Accept-Language: es-mx
+    Accept-Encoding: gzip, deflate
+    Connection: Keep-Alive
+
 El servidor nos respondería algo como
 
     HTTP/1.1 200 OK
@@ -105,7 +107,7 @@ La respuesta del servidor
 
 El método de solicitud [HTTP PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) crea un nuevo recurso o reemplaza una representación del recurso de destino con la carga útil de la solicitud.
 
-La diferencia entre PUTy POSTes que PUTes idempotente: llamarlo una o varias veces sucesivamente tiene el mismo efecto (que no es un efecto secundario )
+La diferencia entre PUT y POST es que PUTes idempotente: llamarlo una o varias veces sucesivamente tiene el mismo efecto (que no es un efecto secundario )
 
     
     Se solicita al servidor que guarde el cuerpo de la entidad dada en index.htm en la raíz del servidor:
@@ -136,9 +138,6 @@ Y el servidor por su parte, responde con lo siguiente al cliente
     Content-type: text/html
     Content-length: 30
     Connection: Closed
-
-
-
 
 
 ### Metodo DELETE
@@ -175,12 +174,12 @@ El método [HTTP OPTIONS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Meth
     Se necesita saber cuáles métodos de solicitud soporta el servidor, podemos utilizar curl y una solicitud OPTIONS:
    
     	
-    1 curl -X OPTIONS https://yosoy.dev -i
+    curl -X OPTIONS https://yosoy.dev -i
 
 Lo cual el servidor podria contestar algo similar
 
-    1 HTTP/1.1 200 OK
-    2 Date: Wed, 8 Nov 2017 12:28:53 GMT
-    3 Server: Apache/2.2.14 (Win32)
-    4 Allow: GET,HEAD,POST,OPTIONS,TRACE
-    5 Content-Type: httpd/unix-directory
+     HTTP/1.1 200 OK
+     Date: Wed, 8 Nov 2017 12:28:53 GMT
+     Server: Apache/2.2.14 (Win32)
+     Allow: GET,HEAD,POST,OPTIONS,TRACE
+     Content-Type: httpd/unix-directory
