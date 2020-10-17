@@ -4,6 +4,9 @@
 
 [HTTP](https://developer.mozilla.org/es/docs/Web/HTTP/Methods) define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente, pero algunas características similares son compartidas por un grupo de ellos: ej. un request method puede ser safe, idempotent, o cacheable.
 
+
+<img height="300" width="600" src="HTTP.jpg"> 
+
 ## Marco teorico
 
 ### Metodo GET
@@ -183,3 +186,29 @@ Lo cual el servidor podria contestar algo similar
      Server: Apache/2.2.14 (Win32)
      Allow: GET,HEAD,POST,OPTIONS,TRACE
      Content-Type: httpd/unix-directory
+
+[REFERENCIAS DE LOS EJEMPLOS](https://yosoy.dev/peticiones-http-get-post-put-delete-etc/#:~:text=El%20m%C3%A9todo%20GET%20significa%20recuperar,el%20texto%20fuente%20del%20proceso.)
+
+
+# Tipos de mensajes de las peticiones HTTPs
+
+[Un código de estado HTTP](https://www.lucushost.com/blog/codigos-http-mas-comunes/) es un mensaje que devuelve el servidor cada vez que el navegador realiza una petición al servidor. Si el servidor es capaz de devolver el contenido que solicita el navegador y no existe ningún error, estos códigos HTTP no son visibles para el usuario. En cambio, si algo va mal, verás que el servidor devuelve un código de estado HTTP que indica que algo no salió como esperaba.
+
+Estos codigos de estados manejan intervalos de mensajes según la respuesta del servidor. Los significados de estos intervalos son
+
+* Códigos de estado 1xx: Se trata de respuestas de carácter informativo e indica que el navegador puede continuar realizando su petición.
+
+* Códigos de estado 2xx: El conjunto de códigos 2xx son respuestas satisfactorias, Simplemente indican que la petición fue procesada correctamente, por lo que lo ideal es que todas las webs devuelvan este código HTTP. Generalmente como la petición fue exitosa no se muestra el código de estado, el navegador únicamente devuelve el contenido que el usuario solicitó.
+
+* Códigos de estado 3xx: Estos códigos HTTP hacen referencia a cuando el navegador tiene que realizar una acción adicional como, por ejemplo, una redirección.
+
+* Códigos de estado 4xx: Los códigos de estado que comienzan con el dígito 4 hacen referencia a errores producidos por el navegador web. En estos casos, el usuario normalmente recibe una página en HTML en la que es informado del error.
+
+* Códigos de estado 5xx: Esto códigos HTTP también muestran errores, pero por el lado del servidor web.
+
+
+Errores de los intervalos 100--199
+
+
+
+
